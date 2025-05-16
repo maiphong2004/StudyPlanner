@@ -1,7 +1,6 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-<<<<<<< HEAD
     "target": "esnext",
     "module": "Node16",
     "moduleResolution": "node16",
@@ -14,14 +13,6 @@
     "customConditions": [
       "react-native"
     ]
-=======
-    "strict": true,
-    "paths": {
-      "@/*": [
-        "./*"
-      ]
-    }
->>>>>>> 95d4801f266509f8b2f00d05b09ab71cb5961d3b
   },
   "include": [
     "**/*.ts",
@@ -29,8 +20,4 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
   ]
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 95d4801f266509f8b2f00d05b09ab71cb5961d3b

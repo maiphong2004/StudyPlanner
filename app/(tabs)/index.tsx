@@ -1,5 +1,13 @@
-import { StyleSheet, View, Text, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 import React from 'react';
+// import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+// import { NavigationContainer } from '@react-navigation/native';
+// import {
+//   Home,
+//   ListChecks,
+//   TrendingUp,
+//   Settings
+// } from 'lucide-react';
 
 export default function HomeScreen() {
   return (
@@ -10,10 +18,14 @@ export default function HomeScreen() {
         fontSize: 50,
         textAlign: 'center',
         marginTop: 100,
-        marginBottom: 100,
+        marginBottom: 30,
       }}>Study Planner</Text>
       <View style={styles.buttonRow}>
         <TouchableOpacity style={styles.button1}>
+          <Image
+            source={require('@/assets/images/Schedule.png')} // Thay đổi đường dẫn đến hình ảnh của bạn
+            style={{}}
+          />
           <Text style={{
             color: '#FFEDBE',
             fontWeight: 'bold',
@@ -21,6 +33,10 @@ export default function HomeScreen() {
           }}>Schedule</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button2}>
+          <Image
+            source={require('@/assets/images/Tasks.png')} // Thay đổi đường dẫn đến hình ảnh của bạn
+            style={{}}
+          />
           <Text style={{
             color: '#FFEDBE',
             fontWeight: 'bold',
@@ -30,6 +46,10 @@ export default function HomeScreen() {
       </View>
       <View style={styles.buttonRow}>
         <TouchableOpacity style={styles.button3}>
+          <Image
+            source={require('@/assets/images/Progress.png')} // Thay đổi đường dẫn đến hình ảnh của bạn
+            style={{}}
+          />
           <Text style={{
             color: '#FFEDBE',
             fontWeight: 'bold',
@@ -37,6 +57,13 @@ export default function HomeScreen() {
           }}>Progress</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button4}>
+          <Image
+            source={require('@/assets/images/History.png')} // Thay đổi đường dẫn đến hình ảnh của bạn
+            style={{
+              marginTop: 5,
+              marginBottom: 5,
+            }}
+          />
           <Text style={{
             color: '#FFEDBE',
             fontWeight: 'bold',
@@ -70,18 +97,6 @@ export default function HomeScreen() {
         flexDirection: 'row',
         marginTop: 100,
       }}>
-        <TouchableOpacity style={styles.button5}>
-          <Text style={styles.buttonText}>Home</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button6}>
-          <Text style={styles.buttonText}>Tasks</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button7}>
-          <Text style={styles.buttonText}>Progress</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button8}>
-          <Text style={styles.buttonText}>Setting</Text>
-        </TouchableOpacity>
       </View>
     </View>
   )

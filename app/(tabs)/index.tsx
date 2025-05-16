@@ -1,5 +1,22 @@
 import { StyleSheet, View, Text, TouchableOpacity, Image } from 'react-native';
 import React from 'react';
+import { NativeRouter, Routes, Route } from 'react-router-native';
+import ScheduleScreen from './schedule';
+import TasksScreen from './tasks';
+
+function AppContent() {
+  return (
+    <Routes>
+
+      <Route path="/" element={<HomeScreen />} />
+
+      <Route path="/schedule" element={<ScheduleScreen />} />
+
+      <Route path="/tasks" element={<TasksScreen />} />
+    </Routes>
+  );
+}
+
 
 export default function HomeScreen() {
   return (

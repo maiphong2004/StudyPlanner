@@ -8,6 +8,7 @@ import TabBarBackground from '@/components/ui/TabBarBackground';
 import { Colors } from '@/constants/Colors';
 import { useColorScheme } from '@/hooks/useColorScheme';
 
+
 export default function TabLayout() {
   const colorScheme = useColorScheme();
 
@@ -30,14 +31,33 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          tabBarIcon: ({ color }) => <IconSymbol size={20} name="1.circle.fill" color={color} />,
+          tabBarLabelStyle: { fontSize: 20, fontWeight: 'bold' }
         }}
       />
-      <Tabs.Screen
+      {/* <Tabs.Screen
         name="explore"
         options={{
           title: 'Explore',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+        }}
+      /> */}
+      <Tabs.Screen
+        name="schedule"
+        options={{
+
+          title: 'Schedule',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="1.circle.fill" color={color} />,
+          tabBarLabelStyle: { fontSize: 20, fontWeight: 'bold' }
+        }}
+      />
+      <Tabs.Screen
+        name="tasks"
+        options={{
+
+          title: 'Tasks',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="1.circle.fill" color={color} />,
+          tabBarLabelStyle: { fontSize: 20, fontWeight: 'bold' }
         }}
       />
     </Tabs>

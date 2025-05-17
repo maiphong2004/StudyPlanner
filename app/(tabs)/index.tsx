@@ -24,7 +24,7 @@ export default function HomeScreen() {
       <Text style={{
         color: '#FFEDBE',
         fontWeight: 'bold',
-        fontSize: 50,
+        fontSize: 30,
         textAlign: 'center',
         marginTop: 100,
         marginBottom: 30,
@@ -38,7 +38,7 @@ export default function HomeScreen() {
           <Text style={{
             color: '#FFEDBE',
             fontWeight: 'bold',
-            fontSize: 25,
+            fontSize: 20,
           }}>Schedule</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button2}>
@@ -49,7 +49,7 @@ export default function HomeScreen() {
           <Text style={{
             color: '#FFEDBE',
             fontWeight: 'bold',
-            fontSize: 25,
+            fontSize: 20,
           }}>Tasks</Text>
         </TouchableOpacity>
       </View>
@@ -62,7 +62,7 @@ export default function HomeScreen() {
           <Text style={{
             color: '#FFEDBE',
             fontWeight: 'bold',
-            fontSize: 25,
+            fontSize: 20,
           }}>Progress</Text>
         </TouchableOpacity>
         <TouchableOpacity style={styles.button4}>
@@ -76,7 +76,7 @@ export default function HomeScreen() {
           <Text style={{
             color: '#FFEDBE',
             fontWeight: 'bold',
-            fontSize: 25,
+            fontSize: 20,
           }}>History</Text>
         </TouchableOpacity>
       </View>
@@ -90,13 +90,13 @@ export default function HomeScreen() {
         <Text style={{
           textAlign: 'center',
           fontWeight: 'bold',
-          fontSize: 45,
+          fontSize: 30,
         }}>Welcome back!</Text>
         <Text style={{
           textAlign: 'center',
           fontWeight: 'bold',
           color: '#FFEDBE',
-          fontSize: 25,
+          fontSize: 20,
         }}>You have 2 tasks to do today</Text>
       </View>
       <View style={{
